@@ -1,0 +1,38 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+class  test
+{ private :
+   int km,hr;
+    public :
+    test() : km(0),hr(0){}
+    void get(){
+        cout<<"enter distance";
+        cin>>km;
+         cout<<"enter time";
+          cin>>hr;
+    }
+  void show(){
+    cout<<km<<endl<<hr;
+  }
+   void total(test t){
+test m;
+m.km=km+t.km;
+m.hr=hr+t.hr;
+cout<<m.km<<m.hr;
+   }
+  };
+   
+
+
+ int main()
+ {test you, my;
+ cout<<"your input";
+ you.get();
+ you.show();
+ cout<<"my input";
+ my.get();
+ my.show();
+cout<<"total";
+you.total(my);
+ }

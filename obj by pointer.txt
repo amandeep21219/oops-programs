@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+class parent{
+    public:
+    void show(){
+        cout<<"yoyoyo";
+    }
+};
+int main(){
+    parent*ptr;
+    ptr=new parent;
+    ptr->show();
+    return 0;
+    
+}
+

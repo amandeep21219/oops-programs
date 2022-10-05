@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class di{
+  private:
+  int feets;
+   float inches;
+ public :
+ 
+ di()
+ {
+ feets=0;
+ inches=0;
+ 
+ }
+di(int f,float in):feets(f),inches(in){
+
+}
+void display()
+{
+  cout<<feets<<"    "<<inches<<endl;
+}
+void operator ++(){
+  feets++;
+  inches++;
+}
+};
+int main()
+{
+  di d1(1,5.3),d2;
+  cout<<"before ++"<<endl;
+  d1.display();
+  cout<<"after";
+  ++d1;
+  d1.display();
+  d2.display();
+  return 0;
+
+}

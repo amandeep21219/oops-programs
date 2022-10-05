@@ -1,0 +1,38 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+class animals{
+    private:
+   int a,b; 
+   public:
+animals(int p1,int p2)
+{
+    a=p1;
+    b=p2;
+
+}
+void show(){
+    cout<<a<<endl;
+    cout<<b<<endl;
+}};
+class child:public animals{
+    private:
+    int x,y;
+    public:
+    child(int p1,int p2,int c,int d):animals(p1,p2){
+        x=c;
+        y=d;
+    }
+    void display(){
+        cout<<x<<endl;
+        cout<<y<<endl;
+    }
+};
+int main()
+{
+child a(2,12,122,1);
+a.show();
+a.display();
+return 0;
+}

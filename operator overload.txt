@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class test{
+  private:
+  int n;
+  public:
+ void getvalue()
+ {
+  cin>>n
+ }
+};
+int main()
+{
+  test obj1,obj2;
+  cout<<"enter obj 1";
+  cin>>obj1.getvalue();
+  cout<<"enter obj 2";
+  cin>>obj2.getvalue();
+}

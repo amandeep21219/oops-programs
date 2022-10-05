@@ -1,0 +1,76 @@
+#include<iostream>
+
+using namespace std;
+class parent{
+    public:
+     virtual void show(){
+        cout<<"yoyoyo"<<endl;
+    }
+};
+class empl:public parent
+{
+    public:
+    void show(){
+        cout<<"222o"<<endl;
+    }};
+    class prog:public empl
+    {
+    public:
+    void show(){
+        cout<<"yoyoo"<<endl;
+    }};
+int main()
+{
+    parent o;
+    empl ob;
+    prog obj;
+    parent*p;
+   p=&o;
+    p->show();
+     p=&ob;
+    p->show();
+   p=&obj;
+    p->show();
+    return 0;
+}
+    
+
+
+#include<iostream>
+
+using namespace std;
+class parent{
+    public:
+     virtual void show(){
+        cout<<"yoyoyo"<<endl;
+    }
+};
+class empl:public parent
+{
+    public:
+    void show(){
+        cout<<"222o"<<endl;
+    }};
+    class prog:public empl
+    {
+    public:
+    void show(){
+        cout<<"yoyoo"<<endl;
+    }};
+int main()
+{
+    parent o;
+    empl ob;
+    prog obj;
+    parent*p;
+   p=&o;
+    p->show();
+     p=&ob;
+    p->show();
+   p=&obj;
+    p->show();
+    return 0;
+}
+    
+
+

@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+class test{
+  private:
+  int n;
+  public:
+  test(){
+    n=0;
+  }
+  void display(){
+    cout<<n;
+  }
+  void getvalue(){
+    cin>>n;
+    cout<<n;
+  }
+  test operator+(test obj){
+    test t;
+    t.n=n+obj.n;
+    return t;
+
+  }
+  test operator-(test obj){
+    test t;
+    t.n=n-obj.n;
+    return t;
+}
+};
+int main()
+{
+  test obj1,obj2,sum ,sub,mult,div,mod;
+  obj1.getvalue();
+  cout<<"                                          "<<endl;
+   obj2.getvalue();
+   sum=obj1+obj2;
+   cout<<"add is";
+   sum.display();
+   sub=obj1-obj2;
+   cout<<"sub:";
+   sub.display();
+  return 0;
+
+}
+  

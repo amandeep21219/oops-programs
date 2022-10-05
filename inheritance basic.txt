@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+class animals{
+    public:
+    int legs=4;
+
+};
+class dog:public animals{
+    public:
+    int tail=1;
+
+};
+int main(){
+    dog d;
+    cout<<d.legs<<d.tail;
+    return 0;
+}

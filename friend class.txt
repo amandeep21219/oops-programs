@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class a{
+  private :
+  int a;
+  protected :
+  int b;
+  public:
+  friend class b;
+};
+class b{
+  public :
+  void input(a obj1)
+  {
+    cin>>obj1.a>>obj1.b;
+    int res;
+    res=obj1.a+obj1.b;
+    cout<<res;
+  }
+};
+int main()
+{
+a obj1;
+b obj2;
+obj2.input(obj1);
+return 0;
+}

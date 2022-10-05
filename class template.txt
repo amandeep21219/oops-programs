@@ -1,0 +1,25 @@
+#include<iostream>
+
+using namespace std;
+ template<class t>
+ class test{
+    private:
+    t n;
+    public:
+    void getvalue()
+    {
+        cin>>n;
+    }
+    void print(){
+        cout<<n<<endl;
+    }
+ };
+ int main()
+ {
+   test<int>y;
+   cout<<"enter''";
+   y.getvalue();
+   y.print();
+   return 0;
+ }
+   
